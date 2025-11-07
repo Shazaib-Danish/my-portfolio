@@ -9,9 +9,9 @@ const Portfolio: React.FC = () => {
       id: 1,
       title: 'E-Commerce Flutter App',
       category: 'mobile',
-      image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=500',
+      image: 'https://deorwineblog.b-cdn.net/uploads/2019/06/e-com-app.jpg',
       description: 'Complete e-commerce mobile app with payment integration, built with Flutter and Laravel backend.',
-      technologies: ['Flutter', 'Laravel', 'MySQL', 'Stripe'],
+      technologies: ['iOS & Android','Flutter', 'Laravel', 'MySQL', 'Stripe'],
       features: ['User Authentication', 'Product Catalog', 'Shopping Cart', 'Payment Integration', 'Order Tracking'],
       liveUrl: '#',
       githubUrl: '#'
@@ -42,7 +42,7 @@ const Portfolio: React.FC = () => {
       id: 4,
       title: 'Healthcare Mobile App',
       category: 'mobile',
-      image: 'https://images.pexels.com/photos/4270088/pexels-photo-4270088.jpeg?auto=compress&cs=tinysrgb&w=500',
+      image: 'https://www.travancoreanalytics.com/wp-content/uploads/2024/08/Healthcare-mobile-app-development-01-01.webp',
       description: 'Patient management and telemedicine Flutter app with video calling and appointment booking.',
       technologies: ['Flutter', 'Firebase', 'WebRTC', 'Push Notifications'],
       features: ['Video Calling', 'Appointment Booking', 'Medical Records', 'Prescription Management', 'Chat Support'],
@@ -70,7 +70,73 @@ const Portfolio: React.FC = () => {
       features: ['Fraud Detection', 'KYC Verification', 'Multi-Factor Auth', 'Compliance Reporting', 'Real-time Monitoring'],
       liveUrl: '#',
       githubUrl: '#'
-    }
+    },
+    {
+  id: 7,
+  title: 'Digital Banking App',
+  category: 'mobile',
+  image: 'https://images.pexels.com/photos/4968631/pexels-photo-4968631.jpeg?auto=compress&cs=tinysrgb&w=500',
+  description: 'A secure mobile banking application offering balance tracking, fund transfers, bill payments, and transaction history.',
+  technologies: ['Flutter', 'Node.js', 'MongoDB', 'JWT'],
+  features: ['Secure Login', 'Balance Overview', 'Funds Transfer', 'Bill Payments', 'Notifications'],
+  liveUrl: '#',
+  githubUrl: '#'
+},
+{
+  id: 8,
+  title: 'Taxi Ride Booking App',
+  category: 'mobile',
+  image: 'https://www.uberapps.tech/assets/images/uberapps.png',
+  description: 'Uber-style taxi booking app with real-time ride tracking, driver panel, and fare estimation.',
+  technologies: ['Flutter', 'Firebase', 'Google Maps API'],
+  features: ['Live Tracking', 'Ride Booking', 'Fare Estimation', 'Driver App', 'Push Notifications'],
+  liveUrl: '#',
+  githubUrl: '#'
+},
+{
+  id: 9,
+  title: 'Handyman Services App',
+  category: 'mobile',
+  image: 'https://images.pexels.com/photos/1205301/pexels-photo-1205301.jpeg?auto=compress&cs=tinysrgb&w=500',
+  description: 'A complete service marketplace for plumbers, electricians, and technicians with job posting and bookings.',
+  technologies: ['Flutter', 'Laravel', 'MySQL'],
+  features: ['Service Listings', 'Booking System', 'User Profiles', 'Reviews & Ratings', 'Secure Payments'],
+  liveUrl: '#',
+  githubUrl: '#'
+},
+{
+  id: 10,
+  title: 'Hotel Booking System',
+  category: 'web',
+  image: 'https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=500',
+  description: 'A modern hotel booking platform with room management, availability checking, and online payments.',
+  technologies: ['Laravel', 'Vue.js', 'MySQL', 'Stripe'],
+  features: ['Room Availability', 'Online Booking', 'Admin Panel', 'Payments', 'Reports'],
+  liveUrl: '#',
+  githubUrl: '#'
+},
+{
+  id: 11,
+  title: 'AI Chatbot Automation System',
+  category: 'ai',
+  image: 'https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=500',
+  description: 'AI-powered chatbot platform for automated customer support, trained on business data.',
+  technologies: ['Python', 'Flutter', 'OpenAI API', 'Firebase'],
+  features: ['AI Chatbot', 'Auto Replies', 'Training on Data', 'Multi-channel Support', 'Analytics'],
+  liveUrl: '#',
+  githubUrl: '#'
+},
+{
+  id: 12,
+  title: 'Appointment Booking System',
+  category: 'mobile',
+  image: 'https://images.pexels.com/photos/3184450/pexels-photo-3184450.jpeg?auto=compress&cs=tinysrgb&w=500',
+  description: 'A professional appointment scheduling app for clinics, salons, and consultants.',
+  technologies: ['Flutter', 'Laravel', 'MySQL'],
+  features: ['Calendar Booking', 'Service Management', 'Notifications', 'Payments', 'Admin Dashboard'],
+  liveUrl: '#',
+  githubUrl: '#'
+}
   ];
 
   const filters = [

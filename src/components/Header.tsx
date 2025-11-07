@@ -53,10 +53,10 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => scrollToSection('home')}>
             <div className="relative">
-              <Code2 className="h-11 w-11 text-cyan-400" />
+              
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
             </div>
-           <span className="text-xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+           <span className="text-xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-green-500 bg-clip-text text-transparent">
   Shazaib Danish
 </span>
           </div>
@@ -79,7 +79,7 @@ const Header: React.FC = () => {
             ))}
             <button
               onClick={() => scrollToSection('contact')}
-              className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white px-6 py-2 rounded-full font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-bluee-600 hover:to-green-700 text-white px-6 py-2 rounded-full font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Hire Me
             </button>
@@ -111,7 +111,7 @@ const Header: React.FC = () => {
               ))}
               <button
                 onClick={() => scrollToSection('contact')}
-                className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white px-6 py-3 rounded-full font-semibold mt-4"
+                className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-blue-600 hover:to-green-700 text-white px-6 py-3 rounded-full font-semibold mt-4"
               >
                 Hire Me
               </button>

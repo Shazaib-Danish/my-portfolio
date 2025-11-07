@@ -7,12 +7,13 @@ const Hero: React.FC = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const texts = [
-    'Flutter Mobile Apps',
+    'Mobile App For iOS and Android',
+    'Webiste Development',
+    'AI Development',
     'MVP Solutions',
-    'Laravel Web Solutions', 
-    'Payment Integrations',
     'HRM & POS Systems',
-    'E-commerce Platforms'
+    'E-commerce Development',
+     'Payment Integrations'
   ];
 
   useEffect(() => {
@@ -60,7 +61,7 @@ const Hero: React.FC = () => {
               
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 <span className="block text-white">Expert</span>
-                <span className="block bg-gradient-to-r from-cyan-400 via-purple-500 to-green-400 bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-blue-400 via-green-500 to-green-400 bg-clip-text text-transparent">
                   Developer
                 </span>
               </h1>
@@ -74,14 +75,14 @@ const Hero: React.FC = () => {
               </div>
               
               <p className="text-lg text-gray-400 max-w-2xl leading-relaxed">
-                Professional full-stack developer with 30+ payment gateway integrations and expertise in Flutter, Laravel, and modern web technologies. Delivering cutting-edge solutions for businesses worldwide.
+                Helping startups and businesses scale faster with high-performance websites, mobile apps, and AI automation solutions. I build modern, reliable, and growth-focused products that turn ideas into real impact.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <button
                 onClick={() => scrollToSection('contact')}
-                className="group relative bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold text-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="group relative bg-gradient-to-r from-blue-500 to-green-600 hover:from-cyan-600 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold text-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 <span className="relative z-10">Hire Me Now</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full blur opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
@@ -98,16 +99,16 @@ const Hero: React.FC = () => {
 
             <div className="flex items-center justify-center md:justify-start space-x-8 pt-8">
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-cyan-400">30+</div>
-                <div className="text-sm text-gray-400">Payment Gateways</div>
+                <div className="text-2xl md:text-3xl font-bold text-cyan-400">60+</div>
+                <div className="text-sm text-gray-400">Satisfied Clients</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-purple-400">100+</div>
                 <div className="text-sm text-gray-400">Projects Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-green-400">95%</div>
-                <div className="text-sm text-gray-400">Flutter Expertise</div>
+                <div className="text-2xl md:text-3xl font-bold text-green-400">98%</div>
+                <div className="text-sm text-gray-400">Quality of work</div>
               </div>
             </div>
           </div>

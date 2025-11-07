@@ -479,7 +479,7 @@ const ServiceDetail: React.FC = () => {
                 Get Free Consultation
               </a>
               <a
-                href="mailto:hello@developer.com"
+                href="mailto:shazaibdanish4@gmail.com"
                 className="bg-gray-800/50 hover:bg-gray-700/50 backdrop-blur-sm border border-gray-600 hover:border-cyan-500 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300"
               >
                 Send Direct Email

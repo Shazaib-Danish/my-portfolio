@@ -9,7 +9,8 @@ import {
   Database,
   Palette,
   Cloud,
-  ArrowRight
+  ArrowRight,
+  Brain
 } from 'lucide-react';
 
 const Services: React.FC = () => {
@@ -21,16 +22,25 @@ const Services: React.FC = () => {
       description: 'Custom Flutter mobile apps for iOS and Android with native performance and beautiful UI.',
       features: ['Cross-platform compatibility', 'Native performance', 'Beautiful UI/UX', 'App Store deployment'],
       price: 'Starting from $2,000',
-      color: 'from-cyan-500 to-blue-600'
+      color: 'from-blue-500 to-green-600'
     },
     {
       id: 'web-development',
       icon: Globe,
-      title: 'Web Development',
-      description: 'Professional Laravel web applications with modern frontend technologies.',
-      features: ['Responsive design', 'SEO optimized', 'Fast loading', 'Admin panels'],
+      title: 'Website Development',
+      description: 'Professional web applications with modern frontend technologies.',
+      features: ['Beautiful designs','Responsive design', 'SEO optimized', 'Fast loading', 'Admin panels'],
       price: 'Starting from $1,500',
-      color: 'from-purple-500 to-pink-600'
+      color: 'from-purple-500 to-green-600'
+    },
+        {
+      id: 'ui-ux-design',
+      icon: Brain,
+      title: 'AI Developments',
+      description: 'I build smart, scalable AI solutions that automate workflows and enhance user experiences for modern businesses.',
+      features: ['AI chatbot development', 'Workflow automation', 'Business Automation', 'Custom AI model training', 'Smart analytics and insights'],
+      price: 'Starting from $2,000',
+      color: 'from-pink-500 to-rose-600'
     },
     {
       id: 'payment-integration',
@@ -48,7 +58,7 @@ const Services: React.FC = () => {
       description: 'Enterprise resource planning and customer relationship management systems.',
       features: ['Custom workflows', 'Data analytics', 'Multi-user access', 'Cloud-based'],
       price: 'Starting from $5,000',
-      color: 'from-yellow-500 to-orange-600'
+      color: 'from-yellow-500 to-green-600'
     },
     {
       id: 'ecommerce-development',
@@ -62,21 +72,13 @@ const Services: React.FC = () => {
     {
       id: 'database-design',
       icon: Database,
-      title: 'Database Design & API',
-      description: 'Scalable database architecture and RESTful API development.',
+      title: 'MVP Solutions',
+      description: 'I deliver fast, cost-effective MVPs that turn your idea into a working product ready for real-world validation.',
       features: ['Optimized queries', 'Scalable structure', 'API documentation', 'Security focused'],
-      price: 'Starting from $1,200',
+      price: 'Starting from $1,500',
       color: 'from-indigo-500 to-purple-600'
     },
-    {
-      id: 'ui-ux-design',
-      icon: Palette,
-      title: 'UI/UX Design',
-      description: 'Modern, user-friendly interface designs that convert visitors to customers.',
-      features: ['User research', 'Wireframing', 'Prototyping', 'Design systems'],
-      price: 'Starting from $1,000',
-      color: 'from-pink-500 to-rose-600'
-    },
+
     {
       id: 'cloud-deployment',
       icon: Cloud,
@@ -137,13 +139,13 @@ const Services: React.FC = () => {
                     {service.price}
                   </div>
                   
-                  <Link
+                  {/* <Link
                     to={`/services/${service.id}`}
                     className="flex items-center justify-center space-x-2 w-full bg-gradient-to-r from-cyan-500/20 to-purple-500/20 hover:from-cyan-500 hover:to-purple-500 text-cyan-400 hover:text-white border border-cyan-500/30 hover:border-transparent px-4 py-3 rounded-lg font-semibold transition-all duration-300 group/btn"
                   >
                     <span>Learn More</span>
                     <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

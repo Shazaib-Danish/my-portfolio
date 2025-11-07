@@ -107,38 +107,7 @@ const Skills: React.FC = () => {
             </div>
           ))}
         </div>
-
-        {/* Certification Section */}
-        <div className="mt-16 text-center">
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="group relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition-opacity duration-300"></div>
-              <div className="relative bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-gray-700">
-                <div className="text-3xl font-bold text-cyan-400 mb-2">30+</div>
-                <div className="text-gray-300">Payment Gateways Integrated</div>
-                <div className="text-sm text-gray-400 mt-2">Stripe, PayPal, Razorpay, and more</div>
-              </div>
-            </div>
-            
-            <div className="group relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition-opacity duration-300"></div>
-              <div className="relative bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-gray-700">
-                <div className="text-3xl font-bold text-purple-400 mb-2">5+</div>
-                <div className="text-gray-300">Years of Experience</div>
-                <div className="text-sm text-gray-400 mt-2">Professional development</div>
-              </div>
-            </div>
-            
-            <div className="group relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-green-500 to-teal-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition-opacity duration-300"></div>
-              <div className="relative bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg border border-gray-700">
-                <div className="text-3xl font-bold text-green-400 mb-2">100+</div>
-                <div className="text-gray-300">Projects Completed</div>
-                <div className="text-sm text-gray-400 mt-2">Delivered on time</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      
       </div>
     </section>
   );

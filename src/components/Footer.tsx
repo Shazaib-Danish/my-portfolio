@@ -12,17 +12,16 @@ const Footer: React.FC = () => {
   ];
 
   const services = [
-    { name: 'Flutter Development', href: '/services/mobile-app-development' },
-    { name: 'Laravel Development', href: '/services/web-development' },
+    { name: 'Mobile App Development', href: '/services/mobile-app-development' },
+    { name: 'Website Development', href: '/services/web-development' },
     { name: 'Payment Integration', href: '/services/payment-integration' },
     { name: 'ERP Development', href: '/services/erp-development' }
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:hello@developer.com', label: 'Email' }
+    { icon: Github, href: 'https://github.com/Shazaib-Danish?tab=overview&from=2025-11-01&to=2025-11-08', label: 'GitHub' },
+    { icon: Linkedin, href: 'linkedin.com/in/shazaib-danish-30bb9a180', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:shazaibdanish4@gmail.com', label: 'Email' }
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -39,17 +38,13 @@ const Footer: React.FC = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="relative">
-                <Code2 className="h-8 w-8 text-cyan-400" />
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
-              </div>
+            
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-                DevExpert
+                Shazaib Danish
               </span>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
-              Professional full-stack developer specializing in Flutter mobile apps, Laravel web development, 
-              and payment gateway integrations. Delivering cutting-edge solutions worldwide.
+             
             </p>
             <div className="flex items-center space-x-4">
               {socialLinks.map((social, index) => (
@@ -104,7 +99,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2 text-gray-400">
-              <span>© {currentYear} DevExpert. Made with</span>
+              <span>© {currentYear} Shazaib Danish made with</span>
               <Heart className="h-4 w-4 text-red-500 animate-pulse" />
               <span>for amazing projects.</span>
             </div>
