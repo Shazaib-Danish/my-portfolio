@@ -64,13 +64,12 @@ function HomePage() {
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/services/:serviceId" element={<ServiceDetail />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/services/:serviceId" element={<ServiceDetail />} />
+    </Routes>
   );
 }
+
 
 export default App;
