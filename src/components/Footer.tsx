@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/Shazaib-Danish?tab=overview&from=2025-11-01&to=2025-11-08', label: 'GitHub' },
-    { icon: Linkedin, href: 'linkedin.com/in/shazaib-danish-30bb9a180', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/shazaib-danish-30bb9a180', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:shazaibdanish4@gmail.com', label: 'Email' }
   ];
 
