@@ -7,12 +7,13 @@ const Hero: React.FC = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const texts = [
-    'Mobile App For iOS and Android',
-    'Webiste Development',
+    'Mobile App Development',
+    'Website Development',
     'AI Development',
     'MVP Solutions',
-    'HRM & POS Systems',
+    'POS Systems',
     'E-commerce Development',
+    'Shopify Development',
      'Payment Integrations'
   ];
 
