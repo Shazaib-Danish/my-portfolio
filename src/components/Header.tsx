@@ -10,7 +10,7 @@ const Header: React.FC = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
       
-      const sections = ['home', 'about', 'services', 'skills', 'portfolio', 'testimonials', 'contact'];
+      const sections = ['home', 'about', 'education', 'services', 'skills', 'portfolio', 'testimonials', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -38,6 +38,7 @@ const Header: React.FC = () => {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
+    { id: 'education', label: 'Education' },
     { id: 'services', label: 'Services' },
     { id: 'skills', label: 'Skills' },
     { id: 'portfolio', label: 'Portfolio' },
@@ -79,7 +80,7 @@ const Header: React.FC = () => {
             ))}
             <button
               onClick={() => scrollToSection('contact')}
-              className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-bluee-600 hover:to-green-700 text-white px-6 py-2 rounded-full font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-blue-600 hover:to-green-700 text-white px-6 py-2 rounded-full font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Hire Me
             </button>

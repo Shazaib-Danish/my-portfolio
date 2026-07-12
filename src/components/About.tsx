@@ -5,7 +5,7 @@ const About: React.FC = () => {
   const achievements = [
     {
       icon: Code,
-      number: '5+',
+      number: '7+',
       label: 'Years Experience',
       color: 'text-cyan-400'
     },
@@ -56,7 +56,7 @@ const About: React.FC = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            I'm a passionate full-stack developer specializing in Flutter mobile apps and Laravel web solutions, with extensive experience in payment gateway integrations and enterprise systems.
+            I'm a passionate, graduated full-stack developer specializing in Flutter mobile apps and Laravel web solutions, with extensive experience in payment gateway integrations and enterprise systems.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ const About: React.FC = () => {
               <div className="relative bg-gray-800/50 backdrop-blur-sm p-8 rounded-lg border border-gray-700">
                 <h3 className="text-2xl font-bold text-white mb-4">My Journey</h3>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  With over 5 years of experience in software development, I specialize in creating innovative mobile and web solutions. My expertise lies in Flutter for mobile development and Laravel for web applications, with a unique specialization in payment gateway integrations.
+                  With over 7 years of experience in software development, I specialize in creating innovative mobile and web solutions. My expertise lies in Flutter for mobile development and Laravel for web applications, with a unique specialization in payment gateway integrations.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
                   I've successfully integrated 30+ payment gateways across different countries, helping businesses expand their reach globally. From small startups to enterprise-level solutions, I deliver high-quality, scalable applications that drive business growth.

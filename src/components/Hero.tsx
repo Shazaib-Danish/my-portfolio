@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
 
   const texts = [
     'Mobile App For iOS and Android',
-    'Webiste Development',
+    'Website Development',
     'AI Development',
     'MVP Solutions',
     'HRM & POS Systems',
@@ -119,8 +119,12 @@ const Hero: React.FC = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500 via-purple-500 to-green-500 rounded-full blur-2xl opacity-20 animate-pulse"></div>
               <div className="relative w-100 h-100 md:w-96 md:h-96 overflow-hidden  border-gradient-to-r from-cyan-400 to-purple-500 ">
                 <img
-                  src="assets\bg_web_profile.png"
+                  src="assets/bg_web_profile.png"
                   alt="Professional Developer"
+                  width={384}
+                  height={384}
+                  fetchPriority="high"
+                  decoding="async"
                   className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
                 />
                 

@@ -28,7 +28,7 @@ const ParticleCanvas: React.FC = () => {
     };
 
     const createParticles = () => {
-      const particleCount = Math.min(100, Math.floor(window.innerWidth / 20));
+      const particleCount = Math.min(50, Math.floor(window.innerWidth / 30));
       const colors = ['#06B6D4', '#8B5CF6', '#10B981'];
       
       particlesRef.current = Array.from({ length: particleCount }, () => ({
@@ -64,6 +64,11 @@ const ParticleCanvas: React.FC = () => {
     };
 
     const animate = () => {
+      if (document.hidden) {
+        animationFrameRef.current = requestAnimationFrame(animate);
+        return;
+      }
+
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       particlesRef.current.forEach(particle => {
@@ -79,13 +84,10 @@ const ParticleCanvas: React.FC = () => {
         particle.x = Math.max(0, Math.min(canvas.width, particle.x));
         particle.y = Math.max(0, Math.min(canvas.height, particle.y));
 
-        // Draw particle
+        // Draw particle with glow
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
         ctx.fillStyle = `${particle.color}${Math.floor(particle.opacity * 255).toString(16).padStart(2, '0')}`;
-        ctx.fill();
-
-        // Add glow effect
         ctx.shadowColor = particle.color;
         ctx.shadowBlur = 10;
         ctx.fill();
