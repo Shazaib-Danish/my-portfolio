@@ -128,6 +128,8 @@ const Testimonials: React.FC = () => {
                             <img
                               src={testimonial.image}
                               alt={testimonial.name}
+                              loading="lazy"
+                              decoding="async"
                               className="relative w-16 h-16 rounded-full object-cover border-2 border-gray-600"
                             />
                           </div>

@@ -1,10 +1,23 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github, Smartphone, Globe, CreditCard } from 'lucide-react';
 
+interface Project {
+  id: number;
+  title: string;
+  category: string;
+  image: string;
+  description: string;
+  technologies: string[];
+  features: string[];
+  liveUrl: string;
+  githubUrl: string;
+  playStoreUrl?: string;
+}
+
 const Portfolio: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('all');
 
-  const projects = [
+  const projects: Project[] = [
     {
       id: 1,
       title: 'E-Commerce Flutter App',
@@ -136,6 +149,52 @@ const Portfolio: React.FC = () => {
   features: ['Calendar Booking', 'Service Management', 'Notifications', 'Payments', 'Admin Dashboard'],
   liveUrl: '#',
   githubUrl: '#'
+},
+{
+  id: 13,
+  title: 'Tasweeq – Omani E-Commerce Marketplace',
+  category: 'mobile',
+  image: 'https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=500',
+  description: 'E-commerce marketplace connecting Omani merchants and shoppers, covering perfumes, handicrafts, jewelry, and traditional food products with dedicated seller and delivery apps.',
+  technologies: ['Flutter', 'Laravel', 'MySQL', 'Firebase'],
+  features: ['Multi-Vendor Marketplace', 'Flash Sales & Coupons', 'Seller Dashboard', 'Delivery Partner App', 'Multi-Currency Support'],
+  liveUrl: 'https://tasweeq.om/',
+  playStoreUrl: 'https://play.google.com/store/apps/details?id=com.Tasweeq.userapp&hl=en',
+  githubUrl: '#'
+},
+{
+  id: 14,
+  title: 'Fatafut Mart – Online Supermarket',
+  category: 'web',
+  image: 'https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=500',
+  description: 'Online supermarket platform offering groceries, beauty products, electronics, and fresh produce with local delivery for customers in Layyah, Pakistan.',
+  technologies: ['Laravel', 'PHP', 'MySQL'],
+  features: ['1,500+ Product Catalog', 'Cart & Wishlist', 'Order Tracking', 'Scheduled Delivery', 'Customer Accounts'],
+  liveUrl: 'https://fatafutmart.com/',
+  playStoreUrl: 'https://play.google.com/store/apps/details?id=com.fatafutmart.customer&hl=en',
+  githubUrl: '#'
+},
+{
+  id: 15,
+  title: 'J4T – Hire Teens for Chores',
+  category: 'mobile',
+  image: 'https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg?auto=compress&cs=tinysrgb&w=500',
+  description: 'On-demand mobile platform connecting families with local teens for household chores and odd jobs, with booking and job management built in.',
+  technologies: ['Flutter', 'Firebase'],
+  features: ['Job Posting', 'Teen Profiles', 'In-App Booking', 'Push Notifications', 'Ratings & Reviews'],
+  liveUrl: 'https://play.google.com/store/apps/details?id=com.j4teens.app&hl=en',
+  githubUrl: '#'
+},
+{
+  id: 16,
+  title: 'Royal Foods',
+  category: 'web',
+  image: 'https://images.pexels.com/photos/531446/pexels-photo-531446.jpeg?auto=compress&cs=tinysrgb&w=500',
+  description: 'E-commerce storefront for a Pakistani food brand selling natural, Halal-certified spices, cooking oils, grains, and snacks with bilingual support.',
+  technologies: ['Laravel', 'PHP', 'MySQL'],
+  features: ['Product Catalog', 'Bilingual (English/Arabic)', 'Order Tracking', 'Customer Reviews', 'Secure Checkout'],
+  liveUrl: 'https://royalfoods.pk/en',
+  githubUrl: '#'
 }
   ];
 
@@ -193,25 +252,33 @@ const Portfolio: React.FC = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-xl blur opacity-25 group-hover:opacity-75 transition-opacity duration-300"></div>
               <div className="relative bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 overflow-hidden transform group-hover:scale-105 transition-all duration-300">
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute top-4 right-4 flex space-x-2">
                     <a
                       href={project.liveUrl}
+                      target={project.liveUrl.startsWith('http') ? '_blank' : undefined}
+                      rel="noopener noreferrer"
                       className="p-2 bg-cyan-500 text-white rounded-lg opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 hover:bg-cyan-600"
                     >
                       <ExternalLink className="h-4 w-4" />
                     </a>
-                    <a
-                      href={project.githubUrl}
-                      className="p-2 bg-gray-700 text-white rounded-lg opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 delay-75 hover:bg-gray-600"
-                    >
-                      <Github className="h-4 w-4" />
-                    </a>
+                    {(project.playStoreUrl || project.githubUrl !== '#') && (
+                      <a
+                        href={project.playStoreUrl || project.githubUrl}
+                        target={(project.playStoreUrl || project.githubUrl).startsWith('http') ? '_blank' : undefined}
+                        rel="noopener noreferrer"
+                        className="p-2 bg-gray-700 text-white rounded-lg opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 delay-75 hover:bg-gray-600"
+                      >
+                        {project.playStoreUrl ? <Smartphone className="h-4 w-4" /> : <Github className="h-4 w-4" />}
+                      </a>
+                    )}
                   </div>
                 </div>
 
