@@ -57,7 +57,7 @@ const Header: React.FC = () => {
               
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-purple-500 rounded-full animate-pulse"></div>
             </div>
-           <span className="text-xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-green-500 bg-clip-text text-transparent">
+           <span className="text-xl md:text-3xl font-bold bg-gradient-to-r from-blue-400 to-green-500 bg-clip-text text-transparent">
   Shazaib Danish
 </span>
           </div>
