@@ -8,48 +8,84 @@ const Testimonials: React.FC = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
-      role: 'CEO, TechStart Inc.',
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150',
+      name: 'Ricardo Mandini',
+      role: 'Verified Client',
+      image: 'https://ui-avatars.com/api/?name=Ricardo+Mandini&background=0d9488&color=fff&size=150',
       rating: 5,
-      text: 'Exceptional Flutter development! The mobile app exceeded our expectations with smooth performance and beautiful UI. Payment integration was flawless across multiple gateways.',
-      project: 'E-commerce Mobile App'
+      text: 'Great development services provided and great communication. We will keep using him for all our designs and we highly recommend his services.',
+      country: 'United States 🇺🇸'
     },
     {
       id: 2,
-      name: 'Michael Chen',
-      role: 'Founder, RestaurantPro',
-      image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150',
+      name: 'Amir Zee',
+      role: 'Verified Client',
+      image: 'https://ui-avatars.com/api/?name=Amir+Zee&background=7c3aed&color=fff&size=150',
       rating: 5,
-      text: 'Outstanding Laravel development! The restaurant management system streamlined our operations completely. Professional, fast, and reliable service throughout the project.',
-      project: 'Restaurant Management System'
+      text: "The seller is an expert & very professional in his work. I love his work as he presents the animated splash screen for my app & also gives me a brilliant idea for my app as well. He committed to the work & delivered before the deadline. Simply, the vendor delivered exactly what I needed. Would definitely recommend it. Thank you, Man.",
+      country: 'United Arab Emirates 🇦🇪'
     },
     {
       id: 3,
-      name: 'Emily Rodriguez',
-      role: 'CTO, FinanceFlow',
-      image: 'https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=150',
+      name: 'Gabriel Inyaagha',
+      role: 'Verified Client',
+      image: 'https://ui-avatars.com/api/?name=Gabriel+Inyaagha&background=0891b2&color=fff&size=150',
       rating: 5,
-      text: 'Incredible expertise in payment gateway integrations! Successfully integrated 15+ payment methods for our platform. Security and compliance were handled perfectly.',
-      project: 'Multi-Gateway Payment System'
+      text: "Danish is highly skilled and professional. He's a disciplined expert. It's always a delight to work with him.",
+      country: 'Nigeria 🇳🇬'
     },
     {
       id: 4,
-      name: 'David Thompson',
-      role: 'Director, HealthTech Solutions',
-      image: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=150',
+      name: 'Kareem',
+      role: 'Verified Client',
+      image: 'https://ui-avatars.com/api/?name=Kareem&background=db2777&color=fff&size=150',
       rating: 5,
-      text: 'Amazing work on our healthcare app! Flutter development was top-notch with real-time features and secure patient data handling. Highly recommend for mobile projects.',
-      project: 'Healthcare Mobile App'
+      text: 'Great work, worked around the hour, and joined a Zoom call to help as well.',
+      country: 'Jordan 🇯🇴'
     },
     {
       id: 5,
-      name: 'Lisa Wang',
-      role: 'VP Sales, CRM Solutions',
-      image: 'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=150',
+      name: 'Trelllowe416',
+      role: 'Verified Client',
+      image: 'https://ui-avatars.com/api/?name=Trelllowe&background=ca8a04&color=fff&size=150',
       rating: 5,
-      text: 'Excellent CRM development! The Laravel-based system improved our sales process significantly. Clean code, great documentation, and ongoing support.',
-      project: 'Advanced CRM Dashboard'
+      text: 'Very good at what he does and works well with team.',
+      country: 'United States 🇺🇸'
+    },
+    {
+      id: 6,
+      name: 'Ammar Al Hinai',
+      role: 'Verified Client',
+      image: 'https://ui-avatars.com/api/?name=Ammar+Al+Hinai&background=059669&color=fff&size=150',
+      rating: 5,
+      text: 'Thank you very much for your help.',
+      country: 'Oman 🇴🇲'
+    },
+    {
+      id: 7,
+      name: 'Ataxan Rahimli',
+      role: 'Verified Client',
+      image: 'https://ui-avatars.com/api/?name=Ataxan+Rahimli&background=4338ca&color=fff&size=150',
+      rating: 5,
+      text: 'Thanks so much, great work!',
+      country: 'Azerbaijan 🇦🇿'
+    },
+    {
+      id: 8,
+      name: 'Bonsoh',
+      role: 'Verified Client',
+      image: 'https://ui-avatars.com/api/?name=Bonsoh&background=b45309&color=fff&size=150',
+      rating: 5,
+      text: 'Great Job!',
+      country: 'Germany 🇩🇪'
+    },
+    {
+      id: 9,
+      name: 'Rolligator',
+      role: 'Verified Client',
+      image: 'https://ui-avatars.com/api/?name=Rolligator&background=be123c&color=fff&size=150',
+      rating: 5,
+      text: 'Made a good job, thanks!',
+      country: 'China 🇨🇳'
     }
   ];
 
@@ -137,7 +173,7 @@ const Testimonials: React.FC = () => {
                           <div className="text-center">
                             <h4 className="text-xl font-bold text-white">{testimonial.name}</h4>
                             <p className="text-cyan-400 font-medium">{testimonial.role}</p>
-                            <p className="text-sm text-gray-400 mt-1">Project: {testimonial.project}</p>
+                            <p className="text-sm text-gray-400 mt-1">{testimonial.country}</p>
                           </div>
                         </div>
                       </div>
